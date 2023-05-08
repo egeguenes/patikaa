@@ -12,7 +12,7 @@ public class Username{
 		if (passwort.equals("123456")){
 			System.out.println("Sie haben erfolgreich eingeloggt!");
 		} else{
-			System.out.println("Fasclhes Passwort! Möchten Sie Ihr Passwort erneuern??");
+			System.out.println("Falsches Passwort! Moechten Sie Ihr Passwort erneuern??");
 			antwort = input.next();
 			if (antwort.equals("ja")){
 				System.out.println("Geben Sie ein neues Passwort ein!");
@@ -23,7 +23,7 @@ public class Username{
 					System.out.println("Passwort wurde erfolgreich geaendert!");
 				}
 			} else {
-				System.out.println("Sie haben nicht einloggen können.");
+				System.out.println("Sie haben nicht einloggen koennen.");
 			}
  			
 		}
