@@ -1,28 +1,22 @@
 import java.util.Scanner;
 
 public class Uslu{
-	public static void main(String[] args) {
-		int n,k, output, i;
+	public static int power(int n1, int n2){
+		int result = 1;
+		for (int i=1; i<=n2; i++){
+			result *= n1;
+		}
+		return result;
+	}
+	
+	public static void main(String[] args){
 		Scanner ant = new Scanner(System.in);
-		System.out.println("Taban giriniz : ");
-		n = ant.nextInt();
-		System.out.println("Us giriniz : ");
-		k = ant.nextInt();
-		i = k;
-		for (output = 1; k>0; --k){
-			output *= n;
-		} System.out.println(n + " ussu " + i + " isleminin sonucu : " + output);
-		/*int taban, us, sonuc;
-		Scanner input = new Scanner(System.in);
-		System.out.println("Taban gir : ");
-		taban = input.nextInt();
-		System.out.println("Ussunu gir : ");
-		us = input.nextInt();
-		sonuc = 1;
-		while (us>0) {
-			sonuc *= taban;
-			--us;
-		} System.out.println("Sonuc : " + sonuc);
-		*/ 
+		int n3, n4;
+		System.out.print("Base : ");
+		n3 = ant.nextInt();
+		System.out.print("Power : ");
+		n4 = ant.nextInt();
+		int abe = power(n3, n4);
+		System.out.println(abe);
 	}
 }
