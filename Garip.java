@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Garip{
+public class Garip{   
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.print("Gib eine zahl ein : ");
