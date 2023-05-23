@@ -11,14 +11,24 @@ public class ExpoRec{
 		}
 	}
 	public static void main(String[] args){
+		boolean ege = true;
 		Scanner ant = new Scanner(System.in);
-		int a, b;
-		System.out.println("Gib die Basis ein : ");
-		a = ant.nextInt();
-		System.out.println("Gib das Exponent ein : ");
-		b = ant.nextInt();
-		System.out.println("Das Ergebnis ist -> " + expo(a, b));
+		while (ege){
+			int a, b;
+			System.out.println("Gib die Basis ein : ");
+			a = ant.nextInt();
+			System.out.println("Gib das Exponent ein : ");
+			b = ant.nextInt();
+			System.out.println("Das Ergebnis ist -> " + expo(a, b));
+			System.out.println("Wollen Sie die App noch anwenden? J/N");
+		String cont = ant.next();
 
+		if (cont.equalsIgnoreCase("N")){
+			ege = false;
+		}
+
+		}
+		
 
 	}
 }
