@@ -52,6 +52,16 @@ public class Player {
 		this.setCharName( gameChar.getCharName() );
 	}
 
+	public void printInfo() {
+		System.out.println("---------------------------------------");
+		System.out.println("Current : Weapon : " + this.getWeaponName() + 
+									"| Armor : " + this.getArmorName()  + 
+								    "| Health : "+ this.getHealth()     + 
+									"| Damage : "+ this.getDamage()     + 
+									"| Money : " + this.getMoney());
+		System.out.println("---------------------------------------");
+	}
+
 	public int getTotalDamage() {
 		return this.getDamage() + this.getWeaponDamage();
 	}
