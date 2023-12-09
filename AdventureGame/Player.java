@@ -59,7 +59,7 @@ public class Player {
 								    "| Health : "+ this.getHealth()     + 
 									"| Damage : "+ this.getDamage()     + 
 									"| Money : " + this.getMoney());
-		System.out.println("---------------------------------------");
+		System.out.println("---------------------------------------");x
 	}
 
 	public int getTotalDamage() {
