@@ -4,7 +4,7 @@ public class Monster {
 	private String name;
 	private int damage;
 	private int health;
-	private int award; 
+	private int award;
 	private int defaultHealth;
 
 	public Monster( int id , String name , int damage , int health , int award ) {

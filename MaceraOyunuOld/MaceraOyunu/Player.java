@@ -22,7 +22,12 @@ public class Player {
 		System.out.println("Such dir einen Character aus : ");
 		System.out.println("---------------------------------------");
 		for (int i=0; i<gc.length; i++) {
-			System.out.println("Character -> " + "ID : " + gc[i].getID() + " / Name : "+ gc[i].getName() + " / Damage : " + gc[i].getDamage() + " / Health : " + gc[i].getHealth() + " / Money : " + gc[i].getMoney());
+			System.out.println("Character -> " + 
+				"ID : " + gc[i].getID() + 
+				" / Name : "+ gc[i].getName() + 
+				" / Damage : " + gc[i].getDamage() + 
+				" / Health : " + gc[i].getHealth() + 
+				" / Money : " + gc[i].getMoney());
 			System.out.println("---------------------------------------");
 		}
 		int selectChar = scan.nextInt();
@@ -39,7 +44,6 @@ public class Player {
 			default : 
 				throw new IllegalArgumentException("Invalid Index");
 		} 
-		//System.out.println("Der Character wurde ausgesucht -> " + this.getCharName() + " Damage : " + this.getDamage() + " Health : " + this.getHealth() + " Money : " + this.getMoney());
 	}
 
 	public void initPlayer(GameCharacter gameChar) {
@@ -51,7 +55,7 @@ public class Player {
 
 
 	public void printInfo() {
-		System.out.println("Aktuelle --> <Waffe : " + this.getInventory().getWeapon().getName() + " - Armor : " + this.getInventory().getArmor().getName() +  
+		System.out.println("Aktuelle --> <Waffe : " + this.getWeaponName() + " - Armor : " + this.getArmorName() +  
 			"> Character : " + this.getCharName() + ", Damage : " + this.getTotalDamage() + 
 			", Health : " + this.getHealth() + ", Money : " + this.getMoney());
 	}
